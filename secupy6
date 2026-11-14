@@ -1,0 +1,9 @@
+deposito = float(input("Ingrese el deposito mensual: "))
+tasa = float(input("Ingrese la tasa de interes mensual: "))
+meses = int(input("Ingrese el numero de meses: "))
+
+valorFuturo = deposito * (((1 + tasa) ** meses - 1) / tasa)
+totalDepositado = deposito * meses
+
+print("Total depositado:", totalDepositado)
+print("Valor futuro:", valorFuturo)
